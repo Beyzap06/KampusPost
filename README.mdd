@@ -1,20 +1,8 @@
 
----
 
-## 🖼️ Uygulama Görselleri
 
-### 🏠 Ana ekran (Hoş Geldiniz)
-![Ana ekran]()
 
-### 🔐 Giriş ekranı
-![Giriş ekranı](
-
-### 📱 Emülatör görüntüsü
-![Emülatör](
-
----
-
-## 🧩 Açıklama
+ Açıklama
 
 - **App.tsx** → Uygulamanın başlangıç dosyasıdır.  
 - **LoginScreen.tsx** → Giriş ekranını içerir (başlık, inputlar, buton).  
@@ -22,7 +10,7 @@
 
 ---
 
-## 👩‍💻 Geliştirici
+##  Geliştirici
 **Ad:** Beyza Polat  
 **Proje:** KampüsPost  
 **Ders:** React Native – DEV 2  
