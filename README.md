@@ -1,20 +1,8 @@
+📱 KampusPost – React Native BGP 201 Ödev 4
 
-📱 KampusPost – React Native Ödev 4
-
-Bu proje, BGP201 dersi kapsamında React Native kullanılarak geliştirilmiş bir mobil uygulamadır.
-Uygulama Login, Register ve Home ekranlarından oluşmaktadır.
-
-Proje;
-
-Navigation yapısı,
-
-Form kontrolü,
-
-API’den veri çekme,
-
-FlatList ile listeleme
-
-özelliklerini içerir.
+Bu proje BGP201 dersi kapsamında React Native kullanılarak geliştirilmiş bir mobil uygulamadır.
+Uygulama; Login, Register ve Home ekranlarından oluşmaktadır.
+Navigation yapısı, form doğrulama, API’den veri çekme ve FlatList ile listeleme özellikleri içermektedir.
 
 📌 İçindekiler
 
@@ -22,11 +10,13 @@ Projenin Amacı
 
 Kullanılan Teknolojiler
 
-Kurulum
+Kurulum (Windows İçin)
 
 Ekran Görüntüleri
 
 Kod Yapısı
+
+App.tsx
 
 LoginScreen
 
@@ -42,54 +32,66 @@ Sonuç
 
 🎯 Projenin Amacı
 
-Bu ödevde amaç:
+Bu ödev kapsamında hedeflenenler:
 
-React Navigation ile ekranlar arası geçiş yapmak
+React Navigation kullanarak ekranlar arası geçiş yapmak
 
-Login / Register form yapısını oluşturmak
+Login ve Register ekranlarında form yapısı oluşturmak
 
-Register ekranında şifre tekrar kontrolü eklemek
+Register ekranında “şifre – şifre tekrar” doğrulaması yapmak
 
 API’den veri çekip Home ekranında listelemek
 
-DevTools üzerinden gerekli logları görüntülemek
+DevTools üzerinden gerekli logları görmek
 
-Uygulama, ders için verilen PDF yönergesine birebir uyumludur.
+Uygulama PDF yönergesine birebir uyumludur.
 
 🧩 Kullanılan Teknolojiler
 Teknoloji	Açıklama
 React Native v0.82	Mobil uygulama geliştirme
 @react-navigation/native	Navigation container
-@react-navigation/native-stack	Stack navigator
-react-native-screens	Navigation performansı
+@react-navigation/native-stack	Stack Navigator
+react-native-screens	Navigation performans modülü
 react-native-safe-area-context	Güvenli alan yönetimi
-Android Emulator / Expo Go (Windows)	Test ortamı (Windows kullanıldığı için iOS Simulator yerine Android veya Expo Go tercih edilmiştir)
-
-💡 Not: Proje Windows ortamında geliştirildiği için iOS Simulator kullanılamamaktadır.
-Testler Android Emulator veya Expo Go (Android) üzerinden gerçekleştirilmiştir.
-🚀 Kurulum (Windows İçin)
-1️⃣ Bağımlılıkların Yüklenmesi
+Android Emulator / Windows	Test ortamı
+🚀 Kurulum (Windows)
+1️⃣ Gerekli bağımlılıkların yüklenmesi
 npm install
-
-2️⃣ React Navigation Kurulumu
 npm install @react-navigation/native @react-navigation/native-stack
 npm install react-native-screens react-native-safe-area-context
 
-3️⃣ iOS İşlemleri (Windows Kullanıcıları İçin GEREKSİZ ❌)
-
-Windows'ta iOS Simulator çalışmaz. Bu adımlar uygulanmaz:
-
-cd ios
-pod install
+2️⃣ Android için Gradle bağımlılıklarını güncelle
+cd android
+gradlew clean
 cd ..
-npx react-native run-ios  ❌
 
-4️⃣ Android’de Çalıştırma (Windows İçin ✔)
+3️⃣ Uygulamayı çalıştır
 npx react-native run-android
 
 
-💻 Kod Yapısı
+✔ Eğer emülatör çalışıyorsa uygulama otomatik olarak açılır.
+
+🖼 Ekran Görüntüleri
+<img width="1007" height="2182" alt="02" src="https://github.com/user-attachments/assets/642c3abe-0a1b-4b02-b221-37bdb0c7054e" />
+<img width="1030" height="2233" alt="03" src="https://github.com/user-attachments/assets/df5fe766-a221-463c-a42c-7740400538a0" />
+<img width="1400" height="1200" alt="01" src="https://github.com/user-attachments/assets/c4dd01cd-fa1d-42b5-a54d-bb06f0df63b0" />
+<img width="1008" height="1061" alt="04" src="https://github.com/user-attachments/assets/53082dee-34e8-430a-84d9-e28d666e6db7" />
+<img width="1003" height="1048" alt="04" src="https://github.com/user-attachments/assets/48d4da5c-ffc2-4919-8622-43869368c727" />
+<img width="1080" height="1044" alt="05" src="https://github.com/user-attachments/assets/2b1eec94-e110-4861-9cf5-dcdf45d3a5d3" />
+<img width="1052" height="2159" alt="06" src="https://github.com/user-attachments/assets/26eeb395-67d7-440c-a899-7d8c5de4804f" />
+<img width="1040" height="2234" alt="07" src="https://github.com/user-attachments/assets/5d5e9170-5b2d-4577-bf54-d1af320fcc2f" />
+<img width="1400" height="700" alt="08" src="https://github.com/user-attachments/assets/7a8a5dc8-86de-415b-b567-37c291fcdbf7" />
+<img width="1400" height="700" alt="10" src="https://github.com/user-attachments/assets/4d2158ec-9699-4d15-b651-03095d4db083" />
+<img width="967" height="2196" alt="11" src="https://github.com/user-attachments/assets/5702650c-cec7-4f4b-a8c2-dc9558973dc5" />
+<img width="1080" height="2222" alt="12" src="https://github.com/user-attachments/assets/93dcac1e-b302-4228-828f-f17d56369d2a" />
+
+
+	
+📂 Kod Yapısı
 App.tsx (Navigation Yapısı)
+
+React Navigation ile Login → Register → Home ekranları arasında geçiş yapılmaktadır.
+
 import React from 'react';
 import { NavigationContainer } from '@react-navigation/native';
 import { createNativeStackNavigator } from '@react-navigation/native-stack';
@@ -115,6 +117,10 @@ const App = () => {
 export default App;
 
 LoginScreen
+
+Kullanıcı giriş bilgileri alınıyor.
+“Giriş Yap” → Home ekranına yönlendiriyor.
+
 import React, { useState } from 'react';
 import { View, Button, StyleSheet } from 'react-native';
 import { useNavigation } from '@react-navigation/native';
@@ -153,6 +159,10 @@ const styles = StyleSheet.create({
 export default LoginScreen;
 
 RegisterScreen
+
+Şifre kontrolü yapılmaktadır.
+Şifreler uyuşmazsa Alert gösterilir.
+
 import React, { useState } from 'react';
 import { View, Button, StyleSheet, Alert } from 'react-native';
 import CustomInput from './CustomInput';
@@ -189,6 +199,9 @@ const styles = StyleSheet.create({
 export default RegisterScreen;
 
 HomeScreen – API + FlatList
+
+jsonplaceholder.typicode.com/posts üzerinden veri çekilmektedir.
+
 import React, { useEffect, useState } from 'react';
 import { View, Text, StyleSheet, ActivityIndicator, FlatList } from 'react-native';
 
@@ -242,14 +255,31 @@ const styles = StyleSheet.create({
 
 export default HomeScreen;
 
+📝 Konsol / DevTools Çıktıları
+
+Login işlemi:
+
+Login values: { email: 'betultest.com', password: '123456' }
+
+
+API sonucu:
+
+Posts: (100) [...]
+
 📁 Proje Klasör Yapısı
 KampusPost
 │── App.tsx
 │── package.json
 │── index.js
 │── tsconfig.json
+│
 │── /components
 │     ├── LoginScreen.tsx
 │     ├── RegisterScreen.tsx
 │     ├── HomeScreen.tsx
 │     └── CustomInput.tsx
+
+✅ Sonuç
+
+Bu proje React Native’in temel yapı taşlarını uygulamalı olarak pekiştirmek amacıyla hazırlanmıştır.
+Navigation, form yönetimi, API’den veri çekme ve listeleme adımları başarıyla gerçekleştirilmiştir.
