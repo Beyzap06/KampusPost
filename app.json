@@ -1,0 +1,18 @@
+{
+  "expo": {
+    "name": "KampusPost",
+    "slug": "kampuspost",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "sdkVersion": "51.0.0",
+    "platforms": [
+      "ios",
+      "android",
+      "web"
+    ],
+    "assetBundlePatterns": [
+      "**/*"
+    ],
+    "extra": {}
+  }
+}
