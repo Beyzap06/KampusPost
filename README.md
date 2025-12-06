@@ -87,17 +87,7 @@ npx react-native run-ios  ❌
 4️⃣ Android’de Çalıştırma (Windows İçin ✔)
 npx react-native run-android
 
-🖼 Ekran Görüntüleri
-Login Ekranı
-<img width="1470" height="956" src="https://github.com/user-attachments/assets/2478ce43-ee62-41a3-8421-9147b3cdc1f9" />
-Register Ekranı
-<img width="1470" height="956" src="https://github.com/user-attachments/assets/1f06a84c-1cdb-47b9-a9e2-0dc5e80a3343" />
-Şifreler Uyuşmuyor Uyarısı
-<img width="1470" height="956" src="https://github.com/user-attachments/assets/18c6527c-a43e-464e-8ef5-15d4b84c6e25" />
-HomeScreen – API Listeleme
-<img width="1470" height="956" src="https://github.com/user-attachments/assets/d4daac77-9754-4e7c-9bcc-e0ae129817f0" />
-Konsol Çıktıları
-<img width="1470" height="956" src="https://github.com/user-attachments/assets/8c0a61b2-c40e-4514-86f2-aed32407cff7" />
+
 💻 Kod Yapısı
 App.tsx (Navigation Yapısı)
 import React from 'react';
