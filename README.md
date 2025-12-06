@@ -255,16 +255,7 @@ const styles = StyleSheet.create({
 
 export default HomeScreen;
 
-📝 Konsol / DevTools Çıktıları
 
-Login işlemi:
-
-Login values: { email: 'betultest.com', password: '123456' }
-
-
-API sonucu:
-
-Posts: (100) [...]
 
 📁 Proje Klasör Yapısı
 KampusPost
